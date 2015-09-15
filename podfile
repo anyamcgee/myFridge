@@ -1,0 +1,4 @@
+pod 'Parse'
+pod 'ParseUI'
+pod 'Bolts'
+pod 'TesseractOCRiOS', '4.0.0'

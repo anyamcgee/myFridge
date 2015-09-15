@@ -1,0 +1,7 @@
+CLANG_CXX_LIBRARY = compiler-default
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bolts" "${PODS_ROOT}/Headers/Public/Parse" "${PODS_ROOT}/Headers/Public/ParseUI" "${PODS_ROOT}/Headers/Public/TesseractOCRiOS" "${PODS_ROOT}/Headers/Public/TesseractOCRiOS/TesseractOCR"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/TesseractOCRiOS/TesseractOCR/lib" "$(PODS_ROOT)/TesseractOCRiOS/TesseractOCR/lib"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bolts" -isystem "${PODS_ROOT}/Headers/Public/Parse" -isystem "${PODS_ROOT}/Headers/Public/ParseUI" -isystem "${PODS_ROOT}/Headers/Public/TesseractOCRiOS" -isystem "${PODS_ROOT}/Headers/Public/TesseractOCRiOS/TesseractOCR"
+OTHER_LDFLAGS = $(inherited) -ObjC -weak_library /usr/lib/libstdc++.6.0.9.dylib -l"Bolts" -l"Parse" -l"ParseUI" -l"TesseractOCRiOS" -l"lept" -l"sqlite3" -l"stdc++" -l"tesseract_all" -l"z" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "Accounts" -weak_framework "Social"
+PODS_ROOT = ${SRCROOT}/Pods
